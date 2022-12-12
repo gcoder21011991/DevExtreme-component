@@ -8,14 +8,14 @@ import {PopupExample} from "./popup/popupExample";
 
 function App() {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-
+  const togglePopup = () => setIsVisible(v => !v);
   return (
     <div className="App">
       <Button
         text="Click me"
-        onClick={() => setIsVisible(v => !v)}
+        onClick={togglePopup}
       />
-      <PopupExample isVisible={isVisible}/>
+      <PopupExample isVisible={isVisible} togglePopup={togglePopup}/>
     </div>
   );
 }

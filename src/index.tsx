@@ -8,5 +8,5 @@ import themes from "devextreme/ui/themes";
 
 themes.current('generic.darkmoon');
 themes.initialized(() => ReactDOM.render(<App />, document.getElementById("root")))
-// ReactDOM.render(<App />, document.getElementById("root"))
+
 
