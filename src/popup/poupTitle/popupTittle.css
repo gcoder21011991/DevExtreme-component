@@ -1,0 +1,11 @@
+.header_container {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.popup_title_logo {
+    width: 1.5em;
+    height: 1.5em;
+}

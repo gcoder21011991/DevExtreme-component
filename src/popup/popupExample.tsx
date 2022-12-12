@@ -5,6 +5,7 @@ import {
 import {popupContent} from "./poupContent/popupContent";
 
 import './popupContetntStyles.css';
+import PopupTittle from "./poupTitle/popupTittle";
 
 type PopUpPropsType = {
   isVisible: boolean;
@@ -17,16 +18,16 @@ export function PopupExample(props: PopUpPropsType) {
         id="popup"
         maxWidth={'37.5rem'}
         maxHeight={'67.7rem'}
-        resizeEnabled={true}
+        resizeEnabled
         visible={props.isVisible}
         contentRender={popupContent}
         onHiding={props.togglePopup}
         closeOnOutsideClick={true}
-        // showTitle
-        // title={'Tittle will be soon...'}
-        titleRender={() => <div>Tittle will be soon...with render</div>}
+        titleRender={() => <PopupTittle/>}
+        position={'center'}
+        dragEnabled
       />
     </div>
   );
 }
-
+//todo  dragEnabled doesn't work
