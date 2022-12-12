@@ -1,0 +1,35 @@
+{
+  "applicationEngine": "react",
+  "build": {
+    "commands": [
+      {
+        "command": "build-theme",
+        "options": {
+          "inputFile": "src/themesMetadata/metadata.base.json",
+          "outputFile": "public/css/dx.light.css"
+        }
+      },
+      {
+        "command": "build-theme",
+        "options": {
+          "inputFile": "src/themesMetadata/metadata.lightCompact.json",
+          "outputFile": "public/css/dx.light.compact.css"
+        }
+      },
+      {
+        "command": "build-theme",
+        "options": {
+          "inputFile": "src/themesMetadata/metadata.materialBlue.json",
+          "outputFile": "public/css/dx.material.blue.light.css"
+        }
+      },
+      {
+        "command": "build-theme",
+        "options": {
+          "inputFile": "src/themesMetadata/metadata.dark.json",
+          "outputFile": "public/css/dx.dark.css"
+        }
+      }
+    ]
+  }
+}
